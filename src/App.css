@@ -12,6 +12,7 @@
   --title-font-size: 48px;
   --links-font-size: 14px;
   --text-font-size: 16px;
+  --nav-links-font-size:16px;
 
   /* Font Family */
   --title-font-familiy: Archivo, "sans-serif";
@@ -21,7 +22,7 @@
 
   /* Font Weight */
   --title-font-weight: 700;
-  --nav-inks-font-weight: 500;
+  --nav-links-font-weight: 500;
   --links-font-weight: 500;
   --text-font-weight: 400;
 }
@@ -32,7 +33,7 @@ a {
 }
 
 a:hover {
-  color: var(--links-color);
+  opacity: 0.5;
 }
 
 a.active {
