@@ -9,10 +9,10 @@
   --nav-links-color: #3e404c;
 
   /* Font sizes */
-  --title-font-size: 48px;
+  --title-font-size: 38px;
   --links-font-size: 14px;
   --text-font-size: 16px;
-  --nav-links-font-size:16px;
+  --nav-links-font-size: 16px;
 
   /* Font Family */
   --title-font-familiy: Archivo, "sans-serif";
@@ -57,8 +57,17 @@ button {
   background-color: var(--background-color);
 }
 
-.container{
+.container {
   margin-left: auto;
   margin-right: auto;
   max-width: 1140px;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding: 6rem 0 2rem;
 }
