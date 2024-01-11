@@ -7,7 +7,7 @@
     grid-template-columns: 520px repeat(2, 1fr);
     padding-top: 5.5rem;
     column-gap: 2rem;
-    align-items: center;    
+    align-items: center;
 }
 
 .home-title {
@@ -17,8 +17,22 @@
     margin-bottom: 10rem;
 }
 
+.home-title b {
+    color: transparent;
+    background: linear-gradient(to right, #ff00cc, #443fde);
+    -webkit-background-clip: text;    
+    background-clip: text;
+}
+
 .home_img {
     height: 500px;
     display: flex;
     align-items: flex-end;
+}
+
+@media screen and (max-width: 992px) {
+    .home_content {
+        grid-template-columns: 440px repeat(2, 1fr);
+        column-gap: 1.5rem;
+    }
 }

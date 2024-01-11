@@ -1,5 +1,6 @@
 import React from 'react'
 import "../styles/Home.css"
+// import Footer from '../components/Footer';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
             />
           </div>
         </div>
+        {/* <Footer /> */}
       </section>
     </>
   );

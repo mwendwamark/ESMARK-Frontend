@@ -24,6 +24,8 @@
 }
 .active-link{
     color: var(--primary-color);
+    display: flex;
+    gap: 2px;
 }
 
 .nav_list {

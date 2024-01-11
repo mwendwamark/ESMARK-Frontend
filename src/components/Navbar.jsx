@@ -16,7 +16,7 @@ const Navbar = () => {
             <div className={Toggle ? "nav_menu show-menu" : "nav_menu"}>
               <ul className="nav_list">
                 <li className="nav_item">
-                  <NavLink to="/home" className="nav_link">
+                  <NavLink to="/" className="nav_link">
                     <i className="bx bx-home nav_icon"></i>Home
                   </NavLink>
                 </li>
