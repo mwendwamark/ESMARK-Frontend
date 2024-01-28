@@ -13,7 +13,7 @@ function App() {
           <Route path="*" element={<NoPage/>}></Route>         
           <Route path="/" element={<Home/>}></Route>
         </Routes>{" "}
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </>
   );

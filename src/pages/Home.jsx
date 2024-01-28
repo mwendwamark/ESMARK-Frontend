@@ -1,13 +1,15 @@
-import React from 'react'
-import "../styles/Home.css"
-// import Footer from '../components/Footer';
+import React from "react";
+import "animate.css";
+
+import "../styles/Home.css";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
     <>
       <section className="home section">
         <div className="home-container container grid">
-          <div className="home_content grid">
+          <div className="animate__animated animate__slideInDown home_content grid">
             <h2 className="home-title">
               <b>Esmark </b> your go-to destination for exceptional rental
               apartments.
@@ -19,10 +21,10 @@ const Home = () => {
             />
           </div>
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </section>
     </>
   );
-}
+};
 
-export default Home
+export default Home;

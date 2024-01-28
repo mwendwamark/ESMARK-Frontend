@@ -1,6 +1,5 @@
 .home-container {
     row-gap: 7rem;
-
 }
 
 .home_content {
@@ -20,7 +19,7 @@
 .home-title b {
     color: transparent;
     background: linear-gradient(to right, #ff00cc, #443fde);
-    -webkit-background-clip: text;    
+    -webkit-background-clip: text;
     background-clip: text;
 }
 
