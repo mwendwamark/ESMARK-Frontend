@@ -1,6 +1,5 @@
 import React from "react";
 import "animate.css";
-
 import "../styles/Home.css";
 import Footer from "../components/Footer";
 
@@ -20,6 +19,7 @@ const Home = () => {
               className="home_img"
             />
           </div>
+          .
         </div>
         <Footer />
       </section>
