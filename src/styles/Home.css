@@ -1,37 +1,175 @@
-.home-container {
-    row-gap: 7rem;
+.home-contents-introduction {
+    display: flex;
+    flex-direction: column;
 }
 
-.home_content {
-    grid-template-columns: 520px repeat(2, 1fr);
-    padding-top: 5.5rem;
-    column-gap: 2rem;
+.home-introduction {
+    font-size: var(--title-font-size);
+    font-family: var(--title-font-familiy);
+    background: linear-gradient(45deg, var(--primary-color), #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 2.3rem;
+    padding: 15px;
+}
+
+.home-introduction b {
+    font-size: var(--title-font-size);
+    background: linear-gradient(45deg, var(--primary-color), #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.welcome-title {
+    color: var(--nav-links-color);
+    font-size: var(--sub-title-font-size);
+    font-weight: var(--title-font-weight);
+}
+
+.apartment_image_contents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apartment_image_contents p {
+    font-size: var(--text-font-size);
+    font-family: var(--nav-links-font-family);
+    font-weight: var(--thin-font-weight);
+    line-height: 28px;
+    text-align: center;
+}
+
+.general-getstarted {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apartment_image_contents p a {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: .5rem;
+    font-weight: var(--title-font-weight);
+    border-radius: 2px;
+    transition: .3s;
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+}
+
+.apartment_image_contents p a:hover {
+    opacity: .8;
+}
+
+.apartment_image_contents p a i {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-weight: var(--title-font-weight);
+}
+
+.apartment_image_contents img {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    align-items: flex-end;
+    outline: none;
+    animation: bounceUpDown 1.3s infinite alternate;
+}
+
+@keyframes bounceUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+        /* Adjust this value to control the bounce height */
+    }
+}
+
+.home-contents-introduction,
+.landlord_management_section,
+.tenant_management_section {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.home-contents-introduction.fade-in,
+.landlord_management_section.fade-in,
+.tenant_management_section.fade-in {
+    opacity: 1;
+}
+
+.landlord_management_section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.landlord_management_section h3 {
+    color: var(--nav-links-color);
+    font-family: var(--title-font-familiy);
+    text-align: center;
+    font-size: var(--sub-title-font-size);
+}
+
+.landlord_management_section_contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 50px;
+}
+
+.landlord_management_section_contents img {
+    max-width: 550px;
+    border: 1px solid #f9f9f9;
+    border-radius: 8px;
+}
+
+.landlord_management_section_contents p {
+    font-size: var(--text-font-size);
+    font-family: var(--nav-links-font-family);
+    font-weight: var(--thin-font-weight);
+    line-height: 28px;
+    text-align: center;
+}
+
+.tenant_management_section {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.tenant_management_section h3 {
+    color: var(--nav-links-color);
+    font-family: var(--title-font-familiy);
+    text-align: center;
+    font-size: var(--sub-title-font-size);
+}
+
+.tenants-contents-section {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 20px;
     align-items: center;
 }
 
-.home-title {
-    font-family: var(--title-font-familiy);
-    font-weight: var(--title-font-weight);
-    font-size: var(--title-font-size);
-    margin-bottom: 10rem;
+.tenants-contents-section p {
+    font-size: var(--text-font-size);
+    font-family: var(--nav-links-font-family);
+    font-weight: var(--thin-font-weight);
+    line-height: 30px;
+    text-align: center;
 }
 
-.home-title b {
-    color: transparent;
-    background: linear-gradient(to right, #ff00cc, #443fde);
-    -webkit-background-clip: text;
-    background-clip: text;
-}
-
-.home_img {
-    height: 500px;
-    display: flex;
-    align-items: flex-end;
-}
-
-@media screen and (max-width: 992px) {
-    .home_content {
-        grid-template-columns: 440px repeat(2, 1fr);
-        column-gap: 1.5rem;
-    }
+.tenants-contents-section img{
+    width: 550px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@200;300;400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
   /* Colors */
@@ -11,22 +11,25 @@
   --nav-links-color: #3e404c;
 
   /* Font sizes */
-  --title-font-size: 38px;
-  --links-font-size: 14px;
-  --text-font-size: 16px;
-  --nav-links-font-size: 16px;
+  /* --extra-large-title-font-size:54px; */
+  --title-font-size:40px;
+  --sub-title-font-size: 24px;
+  --links-font-size: 11px;
+  --text-font-size: 14px;
+  --nav-links-font-size: 14px;
 
   /* Font Family */
-  --title-font-familiy: Archivo, "sans-serif";
-  --nav-links-font-family: Inter, "sans-serif";
-  --links-font-family: Poppins, "sans-serif";
-  --text-font-family: Poppins, "sans-serif";
+  --title-font-familiy: Roboto, "roboto-bold";
+  --nav-links-font-family: Inter, "poppins";
+  --links-font-family: Poppins, "roboto";
+  --text-font-family: Poppins, "poppins";
 
   /* Font Weight */
   --title-font-weight: 700;
   --nav-links-font-weight: 500;
   --links-font-weight: 500;
   --text-font-weight: 400;
+  --thin-font-weight:300;
 }
 
 a {
